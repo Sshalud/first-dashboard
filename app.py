@@ -9,6 +9,7 @@ import dash_html_components as html
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 ### defining the HTML component
 
 app.layout = html.Div([html.Div("Welcome to the dashboard", style= { "color": "white", "text-align": "center", "background-color": "blue",   "display":"block", 'font-size':'5vw', 'marginLeft': 100, 'marginRight': 100, 'marginTop': 30, 'marginBottom': 100, 'border': 'thin lightgrey dashed', 'padding':'10px 10px 10px 10px'}),
